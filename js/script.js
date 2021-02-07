@@ -1,5 +1,9 @@
 const container = document.getElementById("grid-container");
 
+function paint(e) {
+    e.target.style.backgroundColor = "grey";
+}
+
 function makeRows(rows, cols) {
 
 //we first reset the existing grid by deleting every cell.
@@ -10,5 +14,6 @@ function makeRows(rows, cols) {
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "grid-item";
+    cell.addEventListener("mouseover", paint)
   };
 };

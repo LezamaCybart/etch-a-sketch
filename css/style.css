@@ -23,4 +23,6 @@ body {
 
 .grid-item {
   border: 1px solid #ddd;
+  z-index: 1;
 }
+
