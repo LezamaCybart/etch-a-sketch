@@ -26,3 +26,36 @@ body {
   z-index: 1;
 }
 
+p {
+  margin: 0;
+}
+
+#title-div {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 100px;
+}
+
+#controls {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#reset-btn {
+   background-color:rgb(90, 70, 43); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+#reset-btn:hover {
+  background-color: gainsboro;
+  color: darkslategrey;
+}
