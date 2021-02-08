@@ -17,3 +17,17 @@ function makeRows(rows, cols) {
     cell.addEventListener("mouseover", paint)
   };
 };
+
+//control function, reset and resize grid
+
+const button = document.getElementById("reset-btn");
+
+function resetGrid() {
+  let size = prompt("Please enter size between 2 and 64");
+  if ( isNaN(size) ) resetGrid();
+  if ( size < 2 || size > 64 ) resetGrid();
+
+  makeRows(size, size);
+}
+
+button.addEventListener( "click", resetGrid )
